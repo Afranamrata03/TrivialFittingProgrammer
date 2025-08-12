@@ -1,15 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mothers' Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Hello world
+
+  <!-- Logo -->
+  <div class="container text-center pt-4">
+    <img src="https://i.postimg.cc/BQJH74kN/IMG-1791.jpg" alt="Mothers' Care Logo" class="logo mb-3" />
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #0b3d0b;">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#home">Mothers' Care Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#wireframe">Personal Wireframe</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact" onclick="showAlert()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="container my-4">
+    <div class="text-center">
+      <h1>Every mother deserves a mother too.</h1>
+      <p>– someone to guide, support, and walk with her.</p>
+      <p><strong>Mothers' Care</strong> is that hand to hold, for both mother and child.</p>
+    </div>
+    <div class="row my-4">
+      <div class="col-md-6">
+        <h2>Our Goal</h2>
+        <p>
+          We aim to provide a safe and supportive space for mothers and children, especially in difficult situations.
+        </p>
+        <p>We offer care, guidance, and essential resources like:</p>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 rounded" style="background-color: #e0f2e9;">
+          <p>✔ Counseling</p>
+          <p>✔ Ambulance Support</p>
+          <p>✔ Childcare Workshop</p>
+          <p>✔ Hope</p>
+          <p>✔ Care</p>
+          <p>✔ Remote Consultancy</p>
+          <p>✔ Vaccination</p>
+          <p>✔ Nutrition Support</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons below home section -->
+    <div class="text-center my-4">
+      <button onclick="changeBgColor()">Change Background Color</button>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="container my-4">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="alert alert-warning text-center">
+      <strong> Disclaimer:</strong> Services are available for mothers up to age 50 and children up to age 12.
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-box p-3 rounded purple-box">
+          <h4>Pandemic/Emergency Support</h4>
+          <p>Online video consultations for safe and quality care during emergencies.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box p-3 rounded pink-box">
+          <h4>Mental Health Counseling</h4>
+          <p>Support for mothers facing emotional struggles during and after pregnancy.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box p-3 rounded yellow-box">
+          <h4>First-time Mothers Workshops</h4>
+          <p>Guidance on feeding, cleaning, and comforting newborns.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box p-3 rounded green-box">
+          <h4>Nutrition Guidance</h4>
+          <p>Safe and helpful meal plans for mothers and babies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="container my-4">
+    <h2 class="text-center mb-4">About Us</h2>
+    <p>I am a rising junior with a passion for the healthcare field, aiming to help people through teamwork and guidance. This website was created to provide mothers with emotional, medical, and educational support.</p>
+    <p>Our professional network includes doctors, nurses, emergency security, ambulance contacts, and remote consultancy services.</p>
+    <p>We also share the story of how this website was designed — to serve as a helpful, organized, and caring online platform for mothers in need.</p>
+  </section>
+
+  <!-- PERSONAL WIREFRAME SECTION -->
+  <section id="wireframe" class="container my-4 text-center">
+    <h2>Personal Wireframe</h2>
+    <p>This is my overall idea and reference for how I built this website:</p>
+    <img src="https://i.postimg.cc/T1GvHBBh/photo-output.png" alt="Personal Wireframe Reference" style="max-width: 100%; height: auto; border-radius: 8px;" />
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="container my-4 text-center">
+    <h2>Contact Us</h2>
+    <p>For inquiries, please email us at <a href="mailto:afranamrata3@gmail.com">afranamrata3@gmail.com</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 Mothers' Care</p>
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 
